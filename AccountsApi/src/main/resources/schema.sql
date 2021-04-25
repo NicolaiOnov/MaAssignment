@@ -4,6 +4,7 @@ USE MaDemo;
 
 BEGIN TRANSACTION;
 
+DROP TABLE IF EXISTS Accounts
 CREATE TABLE Accounts (
 	Id BIGINT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	Number NVARCHAR(30) UNIQUE NOT NULL,
@@ -12,6 +13,7 @@ CREATE TABLE Accounts (
 	LastOperation DATETIME2(7) NULL
 );
 
+DROP PROCEDURE IF EXISTS SelectAllAccounts;
 CREATE PROCEDURE SelectAllAccounts
 AS
 SELECT [Id]
@@ -19,6 +21,6 @@ SELECT [Id]
       ,[BalanceInCents]
       ,[Currency]
       ,[LastOperation]
-FROM Accounts
+FROM Accounts;
 
 COMMIT;
