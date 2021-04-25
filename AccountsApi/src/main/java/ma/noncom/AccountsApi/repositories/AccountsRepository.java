@@ -20,7 +20,7 @@ public class AccountsRepository {
                 (rs, rowNum) -> new Account(
                         rs.getString("Id"),
                         rs.getString("Number"),
-                        rs.getBigDecimal("Balance"),
+                        rs.getBigDecimal("BalanceInCents"),
                         rs.getString("Currency"),
                         rs.getTimestamp("LastOperation") == null ? null : rs.getTimestamp("LastOperation").toLocalDateTime()));
     }

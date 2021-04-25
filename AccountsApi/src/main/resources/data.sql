@@ -1,12 +1,12 @@
 INSERT INTO Accounts (
 	Number,
-	Balance,
+	BalanceInCents,
 	Currency,
 	LastOperation)
 VALUES
 (
 	'GB33BUKB20201555555555',
-	10000,
+	223,
 	'GBP',
 	null
 ),
@@ -20,7 +20,7 @@ VALUES
 
 (
 	'MD21EX000000000001234567',
-	0.003,
+	0.0003,
 	'MDL',
 	CONVERT(datetime,'Apr 07 12:18:52 2009')
 );

@@ -7,14 +7,14 @@ public class Account {
 
     private final String id;
     private final String number;
-    private final BigDecimal balance;
+    private final BigDecimal balanceInCents;
     private final String currency;
     private final LocalDateTime lastOperation;
 
-    public Account(String id, String number, BigDecimal balance, String currency, LocalDateTime lastOperation) {
+    public Account(String id, String number, BigDecimal balanceInCents, String currency, LocalDateTime lastOperation) {
         this.id = id;
         this.number = number;
-        this.balance = balance;
+        this.balanceInCents = balanceInCents;
         this.currency = currency;
         this.lastOperation = lastOperation;
     }
@@ -27,8 +27,8 @@ public class Account {
         return currency;
     }
 
-    public BigDecimal getBalance() {
-        return balance;
+    public BigDecimal getBalanceInCents() {
+        return balanceInCents;
     }
 
     public String getNumber() {
