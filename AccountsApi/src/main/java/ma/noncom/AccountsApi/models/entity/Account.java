@@ -1,9 +1,10 @@
-package ma.noncom.AccountsApi.models;
+package ma.noncom.AccountsApi.models.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class Account {
+
     private final String id;
     private final String number;
     private final BigDecimal balance;
