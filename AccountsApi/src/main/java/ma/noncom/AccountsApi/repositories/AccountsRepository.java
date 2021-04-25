@@ -3,10 +3,12 @@ package ma.noncom.AccountsApi.repositories;
 import ma.noncom.AccountsApi.models.entity.Account;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.RequestScope;
 
 import java.util.List;
 
 @Service
+@RequestScope
 public class AccountsRepository {
 
     private final JdbcTemplate jdbcTemplate;
