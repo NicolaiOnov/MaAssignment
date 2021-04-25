@@ -17,4 +17,24 @@ public class Account {
         Currency = currency;
         LastOperation = lastOperation;
     }
+
+    public LocalDateTime getLastOperation() {
+        return LastOperation;
+    }
+
+    public String getCurrency() {
+        return Currency;
+    }
+
+    public BigDecimal getBalance() {
+        return Balance;
+    }
+
+    public String getNumber() {
+        return Number;
+    }
+
+    public String getId() {
+        return Id;
+    }
 }
