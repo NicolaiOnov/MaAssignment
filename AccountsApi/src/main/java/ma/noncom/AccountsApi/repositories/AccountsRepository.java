@@ -10,12 +10,12 @@ import java.util.List;
 public class AccountsRepository {
 
     private final JdbcTemplate jdbcTemplate;
-    private final String ReadAccountsStp = "SelectAllAccounts";
+    private final String readAccountsStp = "SelectAllAccounts";
 
     public AccountsRepository(JdbcTemplate jdbcTemplate) { this.jdbcTemplate = jdbcTemplate; }
 
-    public List<Account> ReadAllAccounts() {
-        String sql = String.format("EXEC %s", ReadAccountsStp);
+    public List<Account> readAllAccounts() {
+        String sql = String.format("EXEC %s", readAccountsStp);
 
         List<Account> result = jdbcTemplate.query(
                 sql,

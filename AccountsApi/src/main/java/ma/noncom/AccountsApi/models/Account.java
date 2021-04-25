@@ -4,37 +4,37 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class Account {
-    private final String Id;
-    private final String Number;
-    private final BigDecimal Balance;
-    private final String Currency;
-    private final LocalDateTime LastOperation;
+    private final String id;
+    private final String number;
+    private final BigDecimal balance;
+    private final String currency;
+    private final LocalDateTime lastOperation;
 
     public Account(String id, String number, BigDecimal balance, String currency, LocalDateTime lastOperation) {
-        Id = id;
-        Number = number;
-        Balance = balance;
-        Currency = currency;
-        LastOperation = lastOperation;
+        this.id = id;
+        this.number = number;
+        this.balance = balance;
+        this.currency = currency;
+        this.lastOperation = lastOperation;
     }
 
     public LocalDateTime getLastOperation() {
-        return LastOperation;
+        return lastOperation;
     }
 
     public String getCurrency() {
-        return Currency;
+        return currency;
     }
 
     public BigDecimal getBalance() {
-        return Balance;
+        return balance;
     }
 
     public String getNumber() {
-        return Number;
+        return number;
     }
 
     public String getId() {
-        return Id;
+        return id;
     }
 }
