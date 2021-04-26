@@ -7,3 +7,10 @@ The SQL scripts can be found under src/main/resources/ directory as well. "schem
 There is no need to manually create a database or schema before starting the application first time, it will be done automatically. 
 
 Note that each time when you start the application, the app will attempt to recreate the SQL Table and rewrite test data. If you wish to stop this behaviour, you should change the value of "spring.datasource.initialization-mode" property to "never". This property is also located in application.properties file mentioned above.
+
+OpenAPI docs can be fetched at .../v3/api-docs
+Swagger UI is available at .../swagger-ui
+
+Technologies used:
+- Java Spring
+- Target Database: Microsoft SQL Server
