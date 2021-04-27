@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 @Service
-public class DtoMapper implements DtoMapperInterface {
+public class DtoMapper {
     public AccountDto mapToDto(Account account) {
         return new AccountDto(
                 account.getNumber(),

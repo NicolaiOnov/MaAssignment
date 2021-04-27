@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AccountsRepository implements AccountsRepositoryInterface {
+public class AccountsRepository {
 
     private final JdbcTemplate jdbcTemplate;
     private final String readAccountsStp = "SelectAllAccounts";
