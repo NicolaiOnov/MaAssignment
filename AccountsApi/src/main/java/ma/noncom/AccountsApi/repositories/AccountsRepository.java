@@ -21,8 +21,6 @@ public class AccountsRepository {
 
     public List<Account> readAllAccounts() {
         try {
-            Object obj = new Object();
-            obj.hashCode();
             return jdbcTemplate.query(
                     String.format("EXEC %s", readAccountsStp),
                     (rs, rowNum) -> new Account(
