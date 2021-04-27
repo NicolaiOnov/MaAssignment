@@ -12,7 +12,7 @@ public class DtoMapper {
     public AccountDto mapToDto(Account account) {
         return new AccountDto(
                 account.getNumber(),
-                account.getBalanceInCents().divide(new BigDecimal("100"), 2, RoundingMode.DOWN),
+                account.getBalanceInCents().divide(new BigDecimal("100"), 2, RoundingMode.UNNECESSARY),
                 account.getCurrency(),
                 account.getLastOperation());
     }
