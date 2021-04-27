@@ -1,7 +1,6 @@
 package ma.noncom.AccountsApi.models.dto;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.time.LocalDateTime;
 
 public class AccountDto {
