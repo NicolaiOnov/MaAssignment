@@ -3,6 +3,7 @@ package ma.noncom.AccountsApi.controllers;
 import ma.noncom.AccountsApi.models.dto.AccountDto;
 import ma.noncom.AccountsApi.repositories.AccountsRepositoryInterface;
 import ma.noncom.AccountsApi.services.DtoMapperInterface;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ public class AccountsController {
     private final AccountsRepositoryInterface accountsRepository;
     private final DtoMapperInterface dtoMapper;
 
+    @Autowired
     public AccountsController(AccountsRepositoryInterface accountsRepository, DtoMapperInterface dtoMapper) {
         this.accountsRepository = accountsRepository;
         this.dtoMapper = dtoMapper;
