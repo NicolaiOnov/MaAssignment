@@ -10,7 +10,8 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 @Service
-public class DtoMapper {
+public class DtoMapper implements DtoMapperInterface {
+
     private final Logger logger = LoggerFactory.getLogger(DtoMapper.class);
 
     public AccountDto mapToDto(Account account) {
